@@ -1,6 +1,8 @@
 /* Global vars */
 :root {
   --tst-sidebar-width: 128px;
+  --page-rounded-corner-radius: 7px;
+  --page-border-offset: 8px;
 }
 
 /* From https://gist.github.com/wataf1/4f6dfaa616267d4151fad2eb90cb6f66 */
@@ -13,6 +15,8 @@
 /* Resize the TST sidebar */
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
   width: var(--tst-sidebar-width) !important;
+  padding-left: var(--page-border-offset) !important;
+  background-color: var(--lwt-accent-color) !important;
 }
 
 /* Hide tabs because I'm using TST */
@@ -543,8 +547,9 @@
   margin-top: -44px !important;
 }
 .browserStack > browser {
-  margin: -10px 0 0 0 !important;
-  border-radius: 10px 10px 10px 10px;
+  margin: var(--page-border-offset) !important;
+  margin-top: -10px !important;
+  border-radius: var(--page-rounded-corner-radius);
   transition: border-radius 0.2s !important;
 }
 .browserStack:nth-last-child(3n) > browser,
