@@ -551,6 +551,7 @@
   margin-top: -10px !important;
   border-radius: var(--page-rounded-corner-radius);
   transition: border-radius 0.2s !important;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 .browserStack:nth-last-child(3n) > browser,
 .browserStack:nth-last-child(4n) > browser {
