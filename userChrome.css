@@ -5,6 +5,11 @@
   --page-border-offset: 8px;
 }
 
+/* Fix border around browser being transparent on some themes */
+.browserStack {
+  background-color: var(--lwt-accent-color) !important;
+}
+
 /* From https://gist.github.com/wataf1/4f6dfaa616267d4151fad2eb90cb6f66 */
 /* Hide sidebar header, when using Tree Style Tab. */
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
