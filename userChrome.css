@@ -5,6 +5,11 @@
   --page-border-offset: 8px;
 }
 
+#navigator-toolbox {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
 /* Fix border around browser being transparent on some themes */
 .browserStack {
   background-color: var(--lwt-accent-color) !important;
@@ -165,7 +170,6 @@
 /*  Removes rounding from the top corners,   */
 #navigator-toolbox {
   appearance: none !important;
-  border-radius: 0 !important;
 }
 #navigator-toolbox-background {
   background-color: Field !important;
